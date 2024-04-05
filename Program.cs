@@ -12,10 +12,14 @@ namespace Addressbook
         {
             AddressBook addressBook = new AddressBook();
             addressBook.AddDetails();
-            addressBook.Display();
-
-            Console.WriteLine("add anothe addressbook");
-            addressBook.AddDetails();
+            Console.WriteLine("i u want add another addressbook press 1 or if not press 0");
+            int choice=int.Parse(Console.ReadLine());
+            if(choice == 1)
+            {
+                addressBook.AddDetails();
+            }
+            
+            
             addressBook.Display();
 
         }
